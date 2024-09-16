@@ -2,6 +2,7 @@
 import { ref, watch } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 
+
 const router = useRouter();
 const route = useRoute();
 
@@ -71,6 +72,13 @@ const isActive = (path) => path === currentRoute.value;
           </NuxtLink>
         </div>
       </div>
+      <Switch class="mt-5" />
+      <select v-model="$colorMode.preference">
+      <option value="system">System</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+      <option value="sepia">Sepia</option>
+    </select>
     </header>
   </div>
 </template>

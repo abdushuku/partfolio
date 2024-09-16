@@ -8,6 +8,13 @@ module.exports = {
   safelist: ["dark"],
   prefix: "",
   
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
+  ],
   theme: {
     container: {
       center: true,
@@ -17,6 +24,10 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    colors: {
+      dark: "#000000",
+      lite: "#ffffff",
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -24,6 +35,7 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        black:"#0000",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
