@@ -1,5 +1,3 @@
-
-
 <template>
     <div class="">
         <h1 class="text-4xl uppercase text-bold pb-4 text-balck-400"><strong>About</strong></h1>

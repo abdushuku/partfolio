@@ -29,13 +29,20 @@ const contacts = ref([
 </script>
 
 <template>
-    <div class="p-6 border-t  flex flex-col gap-4">
-        <h2 class="text-3xl pt-4 uppercase text-black"><strong>Contacts</strong></h2>      
-        <div class="flex items-start justify-start gap-4">
-            <div v-for="(contact, index) in contacts" :key="index" class="group flex items-center gap-4 my-4 cursor-pointer">
-                <Icon :name="contact.icon" class="text-3xl"/>
-                <a :href="contact.url" target="_blank" class="text-[16px] hidden group-hover:block transition ease-in-out  duration-300">{{contact.title}}</a>
+    <div class="lg:p-6 border-t  flex items-center justify-between lg:gap-4 sm:gap-2 sm:p-0 ">
+        <div>
+            <h2 class="lg:text-3xl sm:text-3xl sm:pt-2 lg:pt-4 uppercase text-black"><strong>Contacts</strong></h2>      
+            <div class="flex items-start justify-start gap-4 sm:group">
+                <div v-for="(contact, index) in contacts" :key="index" class="group flex items-center gap-4 my-4 cursor-pointer">
+                    <Icon :name="contact.icon" class="text-3xl"/>
+                    <a :href="contact.url" target="_blank" class="text-[16px] hidden group-hover:block transition ease-in-out  duration-300">{{contact.title}}</a>
+                </div>
+                
             </div>
+        </div>
+        <div>
+            <p class="text-[16px] text-neutral-400">abduhakimovabdushukur@gmail.com</p>
+            <a href="tel:+998903940615">+998(90) 394-06-15</a>
         </div>
     </div>
 </template>
