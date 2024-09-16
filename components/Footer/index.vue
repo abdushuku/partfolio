@@ -29,7 +29,7 @@ const contacts = ref([
 </script>
 
 <template>
-    <div class="lg:p-6 border-t  flex items-center justify-between lg:gap-4 sm:gap-2 sm:p-0 ">
+    <div class="lg:p-6 border-t  flex items-center  flex-row justify-between lg:gap-4 sm:gap-2 sm:p-0  ">
         <div>
             <h2 class="lg:text-3xl sm:text-3xl sm:pt-2 lg:pt-4 uppercase text-black"><strong>Contacts</strong></h2>      
             <div class="flex items-start justify-start gap-4 sm:group">
