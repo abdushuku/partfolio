@@ -41,8 +41,11 @@ const contacts = ref([
             </div>
         </div>
         <div>
-            <p class="text-[16px] text-neutral-400">abduhakimovabdushukur@gmail.com</p>
-            <a href="tel:+998903940615">+998(90) 394-06-15</a>
+            <div class="text-[16px] text-neutral-400 pb-3 flex items-center gap-2"> <Icon name="clarity:email-solid"/>abduhakimovabdushukur@gmail.com</div>
+            <div class="flex items-center gap-2">
+                <Icon name="teenyicons:phone-solid"/>
+                <a href="tel:+998903940615">+998(90) 394-06-15</a>
+            </div>
         </div>
     </div>
 </template>
