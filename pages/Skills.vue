@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 const Frontskills = ref([
 
     {
@@ -65,8 +66,8 @@ const Backskills = ref([
         <h2 class="text-3xl  font-bold dark:text-neutral-300"><strong>Skills</strong></h2>
         <div class="pt-3">
             <h2 class="text-xl font-medium text-neutral-500 drak:text-neutral-300">Front end</h2>
-             <div class="grid grid-cols-3 gap-3 pt-2 text-neutral-400">
-                <div v-for="(skill, index) in Frontskills" :key="index" class="flex items-center gap-2">
+             <div class="grid lg:grid-cols-3 sm:grid-cols-2 lg:place-items-start sm:place-items-center gap-3 sm:gap-2 md:gap-3 pt-2 text-neutral-400">
+                <div v-for="(skill, index) in Frontskills" :key="index" class="flex items-center gap-2 md:flex-row md:flex-wrap">
                     <Icon :name="skill.icon" size="30" />
                     <span>{{ skill.title }}</span>
                 </div>
@@ -74,7 +75,7 @@ const Backskills = ref([
         </div>
         <div class="pt-5">
             <h2 class="text-xl font-medium text-neutral-500 dark:text-neutral-300">Back end</h2>
-            <div class="grid grid-cols-3 gap-3 pt-2 text-neutral-400">
+            <div class="grid lg:grid-cols-3 sm:place-items-center sm:grid-cols-2 lg:place-items-start gap-3 pt-2 text-neutral-400">
                 <div v-for="(skill, index) in Backskills" :key="index" class="flex items-center gap-2">
                     <Icon :name="skill.icon" size="30" color="black dark:text-white" />
                     <span>{{ skill.title }}</span>

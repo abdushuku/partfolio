@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 const contacts = ref([
     {
         title:'Github',
@@ -29,9 +30,9 @@ const contacts = ref([
 </script>
 
 <template>
-    <div class="lg:p-6 border-t  dark:border-t-neutral-800  flex items-center  flex-row justify-between lg:gap-4 sm:gap-2 sm:p-0 footer">
+    <div class="lg:p-6 border-t sm:border-t  dark:border-t-neutral-800  flex items-center  flex-row justify-between lg:gap-4 sm:gap-2  sm:p-0 footer">
         <div>
-            <h2 class="lg:text-3xl sm:text-3xl sm:pt-2 lg:pt-4 uppercase text-black dark:text-neutral-300"><strong>Contacts</strong></h2>      
+            <h2 class="lg:text-3xl sm:text-3xl sm:pt-2 md:text-center lg:pt-4 uppercase text-black dark:text-neutral-300"><strong>Contacts</strong></h2>      
             <div class="flex items-start justify-start gap-4 sm:group">
                 <div v-for="(contact, index) in contacts" :key="index" class=" flex items-center gap-4 my-4 cursor-pointer">
                     <UPopover :popper="{ placement: 'top-end',  arrow: true  }">
